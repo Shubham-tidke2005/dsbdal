@@ -1,0 +1,70 @@
+import scala.io.StdIn
+
+val a = StdIn.readInt()      // Integer
+val b = StdIn.readDouble()   // Double
+val c = StdIn.readLine()     // String
+val d = StdIn.readBoolean()  // Boolean
+
+
+
+object Main {
+  def main(args: Array[String]): Unit = {
+    println("Hello, Scala!")
+  }
+}
+
+val x = 10     // immutable (recommended)
+var y = 20     // mutable
+
+val a: Int = 10
+val b: Double = 3.14
+val c: String = "Hello"
+val d: Boolean = true
+
+for (i <- 1 to 5) {
+  println(i)
+}
+
+var i = 1
+while (i <= 5) {
+  println(i)
+  i += 1
+}
+
+
+def add(a: Int, b: Int): Int = {
+  a + b
+}
+
+println(add(2, 3))
+
+
+
+
+val nums = List(1, 2, 3, 4)
+val arr = Array(1, 2, 3)
+val map = Map("a" -> 1, "b" -> 2)
+
+
+
+class Person(name: String, age: Int) {
+  def greet(): Unit = {
+    println(s"My name is $name")
+  }
+}
+val p = new Person("Shubham", 20)
+p.greet()
+
+
+val marks = 75
+val grade = if (marks >= 90) {
+  "A"
+} else if (marks >= 75) {
+  "B"
+} else if (marks >= 50) {
+  "C"
+} else {
+  "Fail"
+}
+
+println(grade)
